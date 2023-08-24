@@ -1,0 +1,87 @@
+/* Adding few lines of code that will change color theme
+according to device setting WITH THE HELP OF CHATGPT*/
+/* styles.css */
+:root {
+    --background-light: white;
+    --background-dark: #000000;
+    --text-light: #000000;
+    --text-dark: white;
+    --border-light: black;
+    --border-dark: white;
+}
+
+/* Default styles */
+body {
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--background-dark);
+        color: var(--text-dark);
+    }
+
+    /* .box {
+        border: 3px solid rgb(226, 0, 0);
+    } */
+}
+
+body {
+    text-align: center;
+}
+/* 
+.parent {
+    border: 1px solid wheat;
+    height: 100vh;
+    width: 100vw;
+} */
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.box {
+    height:200px;
+    width: 200px;
+    border: 3px solid black;
+    border-radius: 2.25rem;
+    margin: 0.65rem;
+}
+
+.red {
+    background-color: #F50057;
+}
+.green {
+    background-color: #00C853;
+}
+
+.blue {
+    background-color: #039BE5;
+}
+
+.yellow {
+    background-color: #FFD600;
+}
+
+.flash {
+    background-color: #cffafe;
+}
+
+.userPress {
+    background-color: #14532d;
+}
+
+@media (orientation: portrait) {
+    .yellow{
+        background-color: #FFD600;
+    }
+}
+
+.end {
+    margin-top: 1rem;
+}
